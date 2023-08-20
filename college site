@@ -1,0 +1,281 @@
+Prac1.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ROCEM</title>
+</head>
+<body>
+<img src="http://rknec.edu/img/LOGO/RCOEM_NewLogo.jpg"
+style="width:100px; position:absolute;left:20px; top:125px;">
+<img src="http://rknec.edu/img/LOGO/Ramdeobaba-Logo.png"
+style="width:100px; position:absolute;left:20px; top:5px;">
+<center>
+<h1 style="margin-top: 3%; font-size: 45px;">Computer Sceince
+Engineering</h1>
+</center>
+<img src="images (1).jpeg"
+style="position:absolute;right:20px; top : 5px; height : 130px">
+<hr style = "margin-top:7.5%;">
+<div class="middle-section">
+<br><br>
+<span>
+<h2 style="margin-left: 87%;font-size:22px;">Navigation
+Panel</h2>
+<nav style="margin-left: 87%;font-size:20px;"><a
+href="">RCOEM</a></nav>
+<nav style="margin-left: 87%;font-size :20px;"><a
+href="">About</a></nav>
+<nav style="margin-left: 87%;font-size: 20px;"><a href="">UG
+Programmes</a></nav>
+<nav style="margin-left: 87%;font-size: 20px;"><a href="">PG
+Programmes</a></nav>
+<nav style="margin-left: 87%;font-size: 20px;"><a
+href="">Branches</a></nav>
+<nav style="margin-left: 87%;font-size: 20px;"><a
+
+href="">Activities</a></nav>
+<nav style="margin-left: 87%;font-size: 20px;"><a
+href="">Placements</a></nav>
+<nav style="margin-left: 87%;font-size: 20px;"><a
+href="student.html">Student Details</a></nav>
+<nav style="margin-left: 87%;font-size: 20px;"><a
+href="">Contact Us</a></nav>
+</span>
+<div style = "margin-right : 15%; position:absolute;left:20px;
+top:225px;">
+<h3>Vision</h3>
+<span >
+To continually improve the education environment, in order to
+develop graduates with strong academic and technical background needed to
+achieve distinction in the discipline. The excellence is expected in
+various domains like workforce, higher studies or lifelong learning. To
+strengthen links between industry through partnership and collaborative
+development works.
+</div>
+<div>
+<img src="images.jpeg"style =
+"position:absolute;left:60px; top:345px;">
+<h4 style = "position:absolute;left:130px; top:505px;">CSE
+Department </h4>
+<img src="AvinashJAgrawal.jpg" style =
+"position:absolute;left:650px; top:345px;height : 175px">
+<h4 style = "position:absolute;left:650px; top:505px;">Dr.
+Avinash Agrawal(HOD) </h4>
+</div>
+</span>
+<br>
+<br>
+<h3>Mission</h3>
+To develop strong foundation of theory and practices of computer
+science amongst the students to enable them to develop into knowledgeable,
+responsible professionals, lifelong learners and implement the latest
+computing technologies for the betterment of the society.
+<br><br>
+<h3>Salient features of Department</h3>
+<ul type"disc"="">
+<li>The Department of Computer Science &amp; Engineering was
+established in 2002, is well-equipped with state-of-the-art
+infrastructure.</li>
+<li>The department established RCOEM-NVIDIA Center of Excellence for
+Artificial Intelligence, Machine Learning, Deep Learning and Data
+Analytics that promotes high-end computing through Open Source
+technologies and hosts NVIDIA DGX DL Workstation.</li>
+<li>The department has received a project grant of INR 1.03 crores in
+
+association with CSIR-Central Institute of Mining and Fuel Research
+(CIMFR), Nagpur Research Centre (Fuel Sciences).</li>
+<li>The department laboratories are well equipped with hardware and
+firmware in line with the current trends for development of projects in
+varied domains like, IoT, Robotics and networking.</li>
+<li>The department is involved in innovative practices that resulted in
+students winning awards for projects of social relevance viz., USD 5000 in
+Data Streamr Challenge, USD 3500 in Biconomy HackMoney and many more.</li>
+<li>The department motivates and guides the students to excel in National
+and International Events like Smart India Hackathon and ICPC resulting in
+4 teams winning the Smart India Hackathon from 2019 to 2022 and 2 teams
+winning a prize money of Rs. 1 lakh each in 2022. Over 8 teams have also
+represented the college in regionals of ICPC.</li>
+<li>The department has MOUs with companies like Infosys, Persistent,
+Accenture, GlobalLogic India Pvt. Ltd., Infocepts that have resulted in
+acquiring the required support and training on the latest software
+products which has helped in bridging the gap between institution and
+industry.</li>
+<li>The department provides a platform to actively contribute to get
+through the challenges by CodeChef, HackerRank, HackerEarth, Geeks Coding
+to name a few.</li>
+<li>Students are encouraged to appear for GATE, CAT, GRE and other
+competitive examinations and opt for higher studies from highly ranked
+universities in the field of Engineering and Management.</li>
+<li>The department is involved in providing guidance to research interns
+facilitating student publications in reputed journals.</li>
+<li>The department also nurtures extra-curricular skills of students to
+get recognized at state, national and inter-national levels.</li>
+</ul>
+<h4> Career Prospects</h4>
+<div class="para">There is large employment potential
+for Computer Science &amp; Engineering graduates in numerous sectors like
+Software Industries, IT Enabled Service firms, Research Sector and
+Communication industry. CSE graduates are offered employment from
+companies, namely, Goldman Sachs, ZS Associates, Amazon, Principal Global
+Services, Capgemini, LLC, Infosys, Informatica, VMware, BirlaSoft, TCS,
+Persistent Systems Ltd., BYJU's, Tata Consultancy Services, GlobalLogic
+India Pvt. Ltd., Infocepts, Accenture, L&amp;T, Merkle Sokrati, Softlink
+International and others with the average package being 4.81 lakhs. Dream
+companies like Goldman Sachs, Amazon and VMware offered compensation as
+high as 23 lakhs, 20 lakhs and 19.5 lakhs respectively. Graduates can seek
+opportunities to work in profiles like Software Developer, Application
+Developer, Enterprise Architect, Data Analyst, Database Administrator,
+Client Server Systems Manager etc. in these firms. In Government sector
+they can serve in reputed firms like NTPC, ONGC, ISRO, Banking Sector,
+Communication Industry like BSNL, MTNL etc. A few graduates have also
+excelled at Industry coding contests thereby grabbing placement in dream
+
+companies. Some graduates have also made efforts towards entrepreneurship
+and have successful startups, Tecture Business Solutions, PocketSavy,
+GreyOcean, SANICON, WebGile Solutions, BILogix, Ola Gate to name a few.
+The alumni of the department are pursuing higher studies at international
+and national universities of repute, namely, Illinois Institute of
+Technology Chicago, University of Texas, University of Southern
+California, North-Eastern University, Stevens Institute of Technology, New
+Jersey, IIT Bombay, IIIT Bangalore, XLRI Jamshedpur, SIBM Pune, IMT
+Ghaziabad and IIM Indore. Our alumni are working with software majors,
+viz., Rediff, Amazon, Microsoft, Yahoo, Informatica, JP Morgan, Intel, and
+Oracle with approximate annual packages of over INR 25 lakhs.
+</div>
+<h4>Industry Institute Interaction</h4>
+<div class="para">The Department has good industry interaction
+with Software industries, Government organization and Private Sectors
+around the region. The Memorandum of Understanding is signed for Student
+Projects, Faculty Trainings, and Research work. The industry offers
+problem definitions to pre-final and final year students for projects
+along with guidance. The final outcome in most of projects is integrated
+as part of product and utilized by industry. </div>
+<div class="para">The industry offers training in recent trend and
+technology in the form of Open Elective courses. The guest lectures are
+organized by department by inviting industry experts in the areas of
+Mobility, Big Data, and Storage Management.</div>
+<div class="para">To provide platform for students to demonstrate
+skill, department organize yearly technical event “Polaris”. This event is
+organized in association with Computer Society of India (CSI). The event
+witness large participation of students from various institutes across
+Nagpur region. The event is judged by industry experts.</div>
+<div class="para">Every year an industry tour is organized by
+department to reputed Software Industries in India to help students to get
+acquainted with environment and working culture of software
+industry.</div>
+</div>
+</body>
+</html>
+
+Student.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Student Details (CSE department)</title>
+</head>
+<body>
+<header>
+<a href = "prac1.html"><img
+src="download.png" style = "height: 40px;
+position: absolute; top:25px;" alt="Back"></a>
+<center>
+<h1>CSE Department</h1>
+<hr />
+</center>
+<span>
+<nav style = "margin-left: 92%;font-size:20px;">
+<a href="/about">About</a><br>
+<a href="/courses">Courses</a><br>
+<a href="/faculties">Faculties</a><br>
+<a href="/students">Students</a><br>
+<a href="/practical1.html/index.html">Home</a><br>
+<a href="/contact">Contact</a><br>
+</nav>
+</span>
+</header>
+<main>
+<center>
+<h2 style=" position: absolute; top : 100px; left :
+600px"><u>Student Details<u></h2>
+<br>
+<br>
+<table style="font-size: lar; position: absolute; top : 170px;
+left : 430px">
+<tr>
+<th>Name</th>
+<th>Roll No.</th>
+<th>Email</th>
+<th>Phone</th>
+</tr>
+<tr>
+<td><a href = "prac1.html" >Pranav
+Darak</a></td>
+<td>CS001</td>
+<td>johndoe@gmail.com</td>
+<td>9876543210</td>
+</tr>
+<tr>
+<td><a href = "prac1.html" >Lavinya
+Bopche</a></td>
+<td>CS002</td>
+<td>janesmith@gmail.com</td>
+
+<td>8765432109</td>
+</tr>
+<tr>
+<td><a href = "abishek.html" >Abishek
+Choudhary</a></td>
+<td>CS003</td>
+<td>tomcruise@gmail.com</td>
+<td>XX_XXXX_XXXX</td>
+</tr>
+</table>
+</center>
+</main>
+<footer>
+</footer>
+</body>
+</html>
+
+Abishek.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+</head>
+<body>
+<header>
+<a href = "student.html"><img
+src="download.png" style = "height: 40px;
+position: absolute; top:25px;" alt="Back"></a>
+<center>
+<h1>CSE Department</h1>
+<hr />
+</center>
+</header>
+<main style = "margin-left: 10%;">
+<h2>Name : Abishek Choudhary</h2>
+<img src="IMG_4759.JPG" style = "height : 160px ;
+position: absolute; top:100px; left : 1000px">
+<p style=" size: 100px;">
+Roll No : 21 <br>
+Branch : CSE B <br>
+Semester : IV <br>
+Batch : B2 <br>
+Email : choudhary@rknec.edu <br>
+
+</p>
+</main>
+</body>
+</html
