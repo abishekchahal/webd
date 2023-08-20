@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Document</title>
+<link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+<center><h1>SHAZAM CALCULATOR</h1></center>
+<div class="container">
+<div class="calculator">
+<input type="text" placeholder="Enter Digits" id="output" >
+<button onclick="Clear()">c</button>
+<button onclick="del()">del</button>
+<button onclick="display('%')">%</button>
+
+<button onclick="display('/')">/</button>
+<button onclick="display('7')">7</button>
+<button onclick="display('8')">8</button>
+<button onclick="display('9')">9</button>
+<button onclick="display('*')">*</button>
+<button onclick="display('4')">4</button>
+<button onclick="display('5')">5</button>
+<button onclick="display('6')">6</button>
+<button onclick="display('-')">-</button>
+<button onclick="display('1')">1</button>
+<button onclick="display('2')">2</button>
+<button onclick="display('3')">3</button>
+<button onclick="display('+')">+</button>
+<button onclick="display('.')">.</button>
+<button onclick="display('0')">0</button>
+<button onclick="Calculate()" class="equal">=</button>
+</div>
+</div>
+<script>
+let outputScreen = document.getElementById("output");
+function display(num){
+outputScreen.value += num;
+}
+function Calculate(){
+try{
+outputScreen.value = eval(outputScreen.value);
+}
+catch(err){
+alert("ERROR")
+}
+}
+function Clear(){
+outputScreen.value = "";
+}
+function del(){
+outputScreen.value = outputScreen.value.slice(0,-1)
+}
+</script>
+</body>
+</html>
+
+
+
+calculator.css
+
+h1{
+padding-top: 3%;
+text-align: center;
+font-size: 60px;
+transition: ease-in-out 0.4s;
+}
+h1:hover{
+color: antiquewhite;
+transform: scale(1.1);
+transition: ease-in-out 0.4s;
+;
+}
+*{
+margin: auto;
+padding: auto;
+box-sizing: border-box;
+background-color: #5f5290f1;
+font-family: 'Courier New', Courier, monospace;
+outline: none;
+}
+.container{
+height: 90vh;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.calculator{
+background-color: #318cd2ca;
+padding: 16px;
+border: solid;
+border-radius: 40px;
+display: grid;
+grid-template-columns: repeat(4,68px);
+transition: ease-in-out 0.5s;
+}
+.calculator:hover{
+transform: scale(1.09);
+}
+input{
+grid-column: span 4;
+height: 70px;
+width: 260px;
+
+
+
+background-color: #bee4eb;
+border: none;
+border-radius: 30px;
+color: rgb(0, 0, 0);
+font-size: 30px;
+text-align: end;
+margin-top: 25px;
+margin-bottom: 20px;
+padding: 10px;
+transition: ease-in-out 0.4s;
+}
+button{
+height: 50px;
+width: 50px;
+background-color: #afa9a9;
+border: solid;
+border-radius: 25px;
+margin: 6px;
+padding: 10px;
+font-size: 20px;
+transition: ease-in-out 0.5s;
+}
+.equal{
+width: 115px;
+border-radius: 40px;
+background-color: #e8693f;
+}
+.equal:hover{
+color: antiquewhite;
+}
+button:hover{
+transform: scale(1.1);
+transition: ease-in-out 0.2s;
+color: #e8693f;
+}
+input:hover{
+background-color: #d8e0bd;
+transform: scale(1.1);
+transition: ease-in-out 0.4s;
+}
+.calculator:hover{
+background-color: rgb(43, 167, 148);
+}
+.container{
+background-color: burlywood;
+}
