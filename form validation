@@ -1,0 +1,187 @@
+form.html
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Forms</title>
+<style>
+body{
+text-align: center;
+background-color: black;
+}
+h1{
+color: white ;
+font-style: italic;
+}
+form{
+color: white;
+font-size: larger;
+}
+.input{
+width: 50%;
+padding: 8px 12px;
+border: 2px solid rgb(255, 0, 0);
+margin: 14px;
+border-radius: 4px;
+font-size: 15px;
+}
+.c_try {
+width: 13%;
+padding: 8px 12px;
+
+border: 2px solid rgb(255, 0, 0);
+margin: 14px;
+border-radius: 4px;
+font-size: 15px;
+}
+textarea{
+width: 30%;
+padding: 30px;
+border: 2px solid rgb(255, 0, 0);
+margin: 14px;
+border-radius: 5px;
+font-size: 15px;
+color: black;
+text-align: center;
+}
+.but {
+margin: 22px 20px;
+font-size: 25px;
+width: 100px;
+border-radius: 8px;
+height: 35px;
+}
+</style>
+</head>
+<body>
+<h1><b><center>REGISTRATION FORM</center></b></h1>
+<form id="forms" action="submit.html" name="forms"
+onsubmit="return validate()" >
+<b>Username:</b><input type="text" name="uid" id="uid"
+class="input" placeholder="Enter User Id"><br><br>
+<b>Password:</b><input type="password" name="pw" id="pw"
+class="input" placeholder="Enter Password"><br><br>
+<b>Name: </b><input type="text" name="cname" id="cname"
+class="input"placeholder="Enter Name"><br><br>
+<b>Country:</b><select name="ucountry" id="ucountry"
+class="c_try">
+
+<option value="default">---Select Country</option>
+<option value="India">India</option>
+<option value="Afganistan">Afganistan</option>
+<option value="France">France</option>
+<option value="Nepal">Nepal</option>
+<option value="Canada">Canada</option>
+<option value="Pakistan">Pakistan</option>
+<option value="Russia">Russia</option>
+<option value="Brazil">Brazil</option>
+<option value="Germany">Germany</option>
+<option value="USA">USA</option>
+<option value="UAE">UAE</option>
+
+<option value="Italy">Italy</option>
+<option value="Others">Others</option><br>
+</select><br><br>
+<b>ZIP Code: </b><input type="number" name="zcode" id="zcode"
+class="input" placeholder="Enter ZIP code"><br><br>
+<b>Address: </b><input type="text" name="addr" id="addr"
+class="input" placeholder="Enter Address"><br><br>
+<b>Email: </b><input type="text" name="cemail"
+id="cemail"class="input" placeholder="Enter Email" ><br><br>
+<b>Gender:</b> <input type="radio" name="male" id="mgen" >Male
+<input type="radio" name="female" id="fgen" >Female
+<input type="radio" name="other" id="ogen" >Other<br><br>
+<b>Langiage:</b>
+<input type="checkbox" name="english" id="elang">English
+
+<input type="checkbox" name="nonenglish" id="nlang">Non-
+English<br><br>
+
+<label for="about"><b>About: </b></label><br/>
+<textarea id="about" maxlength="150" placeholder="Write about
+yourself..."></textarea><br><br>
+<input type="submit" name="submit" value="submit" class="but">
+</form>
+<script src="formval.js">
+</script>
+</body>
+</html>
+
+formval.js
+
+function validate()
+{
+var ui_len=document.forms.uid.value.length;
+var pw_length=document.forms.pw.value.length;
+var name=document.forms.cname.value;
+var country=document.forms.ucountry.value;
+var zipcode=document.forms.zcode.value;
+var address=document.forms.addr.value;
+var email=document.forms.cemail.value;
+var mgen=document.forms.mgen;
+var fgen=document.forms.fgen;
+var ogen=document.forms.ogen;
+var elang=document.forms.elang;
+var nlang=document.forms.nlang;
+
+if(ui_len==0||ui_len>=12||ui_len<5)
+{
+alert("Enter name");
+return false;
+}
+if(pw_length==0||pw_length>=12||pw_length<7)
+{
+alert("Enter password!")
+return false;
+}
+if(name==""||!name.match(/^[A-Za-z]+$/))
+{
+alert("Name should only contain alphabets!")
+return false;
+}
+if(country=="default")
+{
+alert("Choose your country!")
+return false;
+}
+if(zipcode==0)
+{
+alert("Enter Zip Code!")
+return false;
+}
+if(!address.match(/^[0-9a-zA-Z]+$/))
+{
+alert("Address should only contain alphanumeric values!")
+return false;
+}
+if(!email.match(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/))
+{
+alert("Enter valid Email!")
+return false;
+}
+if(mgen.checked==false && fgen.checked==false &&
+ogen.checked==false)
+{
+alert("Select Gender!")
+return false;
+}
+if(elang.checked==false && nlang.checked==false)
+{
+alert("Select Language!")
+return false;
+}
+
+return true;
+}
+
+Submit.html
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Submit</title>
+</head>
+<body bgcolor="black">
+<img src="s.png" width="100%">
+</body>
+</html>
