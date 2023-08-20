@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html ng-app="formApp">
+<head>
+<title> Ticket Booking Form</title>
+<script
+src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></s
+cript>
+<style>
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+background-color: #c4181863;
+}
+.container {
+max-width: 400px;
+margin: 20px auto;
+padding: 20px;
+background-color: #c0ca33;
+border-radius: 5px;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+
+}
+h2 {
+text-align: center;
+color: #333;
+margin-bottom: 20px;
+}
+label {
+display: block;
+margin-bottom: 10px;
+font-weight: bold;
+color: #555;
+}
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+input[type="date"] {
+width: 90%;
+padding: 10px;
+border: none;
+border-radius: 4px;
+background-color: #f4f4f4;
+margin-bottom: 15px;
+color: #555;
+}
+.error-message {
+color: rgb(255, 0, 191);
+margin-top: 5px;
+}
+button[type="submit"] {
+width: 100%;
+padding: 10px;
+background-color: rgb(89, 191, 132);
+color: white;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+font-size: 16px;
+}
+button[type="submit"]:hover {
+background-color: rgb(0, 65, 5);
+}
+
+.success-message {
+margin-top: 20px;
+padding: 10px;
+background-color: #d4edda;
+color: #8d3f1b;
+border: 1px solid #c3e6cb;
+border-radius: 4px;
+text-align: center;
+font-weight: bold;
+}
+</style>
+</head>
+<body style="ba>
+<div ng-controller=" FormController">
+<div class="container">
+<h2 style="color:rgb(89, 89, 191)"> Ticket Booking</h2>
+<form name="bookingForm" ng-submit="submitForm()" novalidate>
+<div>
+<label>Your Name:</label>
+<input type="text" name="name" ng-model="booking.name"
+
+required>
+
+<span class="error-message" ng-show="bookingForm.name.$touched
+
+&& bookingForm.name.$error.required">Name
+is required</span>
+</div>
+<div>
+<label>Enter your Email:</label>
+<input type="email" name="email" ng-model="booking.email"
+
+required>
+
+<span class="error-message"
+ng-show="bookingForm.email.$touched &&
+bookingForm.email.$error.required">Email is required</span>
+
+<span class="error-message" ng-
+show="bookingForm.email.$error.email">Invalid email format</span>
+
+</div>
+<div>
+<label>No. of Tickets:</label>
+<input type="number" name="tickets" ng-model="booking.tickets"
+
+required>
+
+<span class="error-message"
+ng-show="bookingForm.tickets.$touched &&
+bookingForm.tickets.$error.required">Number of tickets is
+
+required</span>
+</div>
+<div>
+<label>Match Selection:</label>
+
+<select name="match" ng-model="booking.match" required>
+<option value="">Select a match</option>
+<option value="match1">Match 1</option>
+<option value="match2">Match 2</option>
+<option value="match3">Match 3</option>
+</select>
+<span class="error-message"
+ng-show="bookingForm.match.$touched &&
+bookingForm.match.$error.required">Match selection is
+
+required</span>
+</div>
+<div>
+<label>Match Date:</label>
+
+<input type="date" name="matchDate" ng-
+model="booking.matchDate" required>
+
+<span class="error-message"
+ng-show="bookingForm.matchDate.$touched &&
+
+bookingForm.matchDate.$error.required">Match date is
+
+required</span>
+</div>
+<div>
+<label>Select Seat Side:</label>
+<select name="seatSide" ng-model="booking.seatSide" required>
+<option value="">Select seat side</option>
+<option value="corner">Corner</option>
+<option value="center">Center</option>
+<option value="front">Front</option>
+</select>
+<span class="error-message"
+ng-show="bookingForm.seatSide.$touched &&
+
+bookingForm.seatSide.$error.required">Seat side is
+
+required</span>
+</div>
+<div>
+<label> Enter The Stadium Name:</label>
+
+<input type="text" name="stadiumName" ng-
+model="booking.stadiumName" required>
+
+<span class="error-message"
+ng-show="bookingForm.stadiumName.$touched &&
+
+bookingForm.stadiumName.$error.required">Stadium name
+
+is required</span>
+</div>
+<div>
+<label>Payment Method:</label>
+
+<input type="radio" name="paymentMethod" value="credit" ng-
+model="booking.paymentMethod" required>
+
+Credit Card
+
+<input type="radio" name="paymentMethod" value="debit" ng-
+model="booking.paymentMethod"> Debit Card
+
+<input type="radio" name="paymentMethod" value="Online" ng-
+model="booking.paymentMethod"> Online
+
+<span class="error-message"
+ng-show="bookingForm.paymentMethod.$touched &&
+
+bookingForm.paymentMethod.$error.required">Payment
+Method is required</span>
+</div>
+<div>
+
+<br> <br> <button type="submit" ng-
+disabled="bookingForm.$invalid">Submit</button>
+
+</div>
+</form>
+<div class="success-message" ng-show="showSuccessMessage">
+Thank you for booking your tickets!
+</div>
+</div>
+</div>
+<script>
+var app = angular.module('formApp', []);
+app.controller('FormController', ['$scope', function ($scope) {
+$scope.showSuccessMessage = false;
+$scope.submitForm = function () {
+if ($scope.bookingForm.$valid) {
+console.log($scope.booking);
+$scope.showSuccessMessage = true;
+} else {
+alert('Please fill in all required fields correctly');
+}
+};
+}]);
+</script>
+</body>
+</html>
