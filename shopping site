@@ -1,0 +1,579 @@
+LOGIN.HTML
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;title&gt;Login/SignUp&lt;/title&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;login.css&quot;&gt;
+    &lt;link
+      rel=&quot;stylesheet&quot;
+      href=&quot;https://fonts.googleapis.com/css?family=Suez One&quot;
+    /&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div class=&quot;form-box&quot;&gt;
+        &lt;div class=&quot;form-value&quot;&gt;
+            &lt;form action=&quot;&quot;&gt;
+                &lt;h2&gt;Login&lt;/h2&gt;
+                &lt;div class=&quot;inputbox&quot;&gt;
+                    &lt;input type=&quot;email&quot; required&gt;
+                    &lt;label for=&quot;email&quot;&gt;Email&lt;/label&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;inputbox&quot;&gt;
+                    &lt;input type=&quot;password&quot; required&gt;
+                    &lt;label for=&quot;password&quot;&gt;Password&lt;/label&gt;
+                &lt;/div&gt;
+
+                &lt;div class=&quot;forgot&quot;&gt;
+                    &lt;label for=&quot;forgot&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt;Remember me&lt;a
+href=&quot;#&quot;&gt;Forgot Password?&lt;/a&gt;&lt;/label&gt;
+                &lt;/div&gt;
+                &lt;button&gt;&lt;a href=&quot;index.html&quot;&gt;Log In&lt;/a&gt;&lt;/button&gt;
+                &lt;div class=&quot;register&quot;&gt;
+                    &lt;p&gt;Don&#39;t have an account? &lt;a
+href=&quot;register.html&quot;&gt;Register&lt;/a&gt; &lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/form&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+Login.css
+body
+{
+    background-image: url(https://images.pexels.com/photos/1495580/pexels-
+photo-1495580.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Suez One;
+}
+.form-box
+{
+    position: relative;
+
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    border: 0px solid rgb(8, 8, 8);
+    backdrop-filter: blur(7px);
+   
+}
+h2
+{
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    color: black;
+}
+.inputbox
+{
+    position: relative;
+    margin: 30px 0;
+    width: 310px;
+    border-bottom: 2px solid black;
+}
+.inputbox label
+{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(0%);
+    color: black;
+    font-size: 15px;
+    font-weight: 600;
+    pointer-events: none;
+}
+input:focus ~ label{
+    top: -5px;
+}
+input:valid ~ label{
+    top: -5px;
+}
+.inputbox input
+{
+
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 10px;
+    padding: 0 35px 0 5px;
+    color: black;
+}
+.forgot
+{
+    margin: -15px 0 15px;
+    font-size: 10px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.forgot label
+{
+    font-size: 13px;
+    font-weight: 600;
+}
+.forgot label input
+{
+    margin-right: 3px;
+}
+.forgot label a
+{
+    color: black;
+    text-decoration: none;
+    padding: 30px;
+    font-size: 13px;
+    font-weight: 600;
+}
+.forgot label a:hover
+{
+    text-decoration: underline;
+}
+button
+{
+    width: 100%;
+
+    height: 40px;
+    border-radius: 40px;
+    background: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+}
+button a
+{
+    text-decoration: none;
+    color: black;
+}
+.register
+{
+    font-size: 10px;
+    color: black;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+.register p
+{
+    font-size: 13px;
+}
+.register p a
+{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 13px;
+}
+.register  p a:hover
+{
+    text-decoration: underline;
+}
+
+Index.html
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+    &lt;title&gt;Online-Shopping Web&lt;/title&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;style.css&quot;&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;header id=&quot;home&quot;&gt;
+    &lt;nav&gt;
+        &lt;div class=&quot;logo&quot;&gt;&lt;img src=&quot;https://seeklogo.com/images/S/shazam-logo-
+500B1C65D6-seeklogo.com.png&quot; alt=&quot;&quot;&gt;&amp;nbsp; SHAZAM&lt;/div&gt;
+        &lt;div class=&quot;menu&quot;&gt;
+            &lt;a href=&quot;#home&quot;&gt;Home&lt;/a&gt;
+            &lt;a href=&quot;#featured&quot;&gt;Featured&lt;/a&gt;
+            &lt;a href=&quot;#fan&quot;&gt;Fans&lt;/a&gt;
+            &lt;a href=&quot;#Coolers&quot;&gt;Coolers&lt;/a&gt;
+            &lt;a href=&quot;#Air conditioner&quot;&gt;Air conditioner&lt;/a&gt;
+            &lt;a href=&quot;#&quot;&gt;Shop&lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/nav&gt;
+&lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;left&quot;&gt;
+        &lt;img src=&quot;https://d2md07pas2ip5w.cloudfront.net/media/pwa-
+theme/slider/range_shot_1_.png&quot;&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;right&quot;&gt;
+        &lt;h1&gt;Best Summer Offers&lt;/h1&gt;
+        &lt;p&gt;
+            We are providing best quality materials. We have best quality
+coolers, fans and ligntening.
+        &lt;/p&gt;
+        &lt;p&gt;
+            50% Discount!!!
+        &lt;/p&gt;
+        &lt;button&gt;Shop&lt;/button&gt;&lt;br&gt;
+        &lt;img src=&quot;icon.png&quot;&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;/header&gt;
+&lt;section id=&quot;featured&quot;&gt;
+    &lt;h1&gt;Featured&lt;/h1&gt;
+    &lt;div class=&quot;wrapper&quot;&gt;
+    &lt;div class=&quot;box1&quot;&gt;
+        &lt;img src=&quot;https://www.havells.com/content/dam/havells/consumer/air-
+cooler/desert-cooler/freddo/freddo-i/GHRACAMK220/cover.png&quot;&gt;
+        &lt;div class=&quot;price&quot;&gt;Price: ₹5000/-&lt;/div&gt;
+    &lt;/div&gt;
+
+        &lt;div&gt;
+        &lt;img
+src=&quot;https://www.havells.com/HavellsProductImages/HavellsIndia/Content/Consume
+r/Fans/ceiling-fans/premium-underlight/FHCOCURAWW52/cover.png&quot;&gt;
+        &lt;div class=&quot;price&quot;&gt;Price: ₹6500 &lt;/div&gt;
+    &lt;/div&gt;
+        &lt;div&gt;
+        &lt;img
+src=&quot;https://www.havells.com/HavellsProductImages/HavellsIndia/Content/Consume
+r/lighting/led-recess-panels/trim-panels/20W-Round/cover.png&quot;&gt;
+        &lt;div class=&quot;price&quot;&gt;Price: ₹400&lt;/div&gt;
+    &lt;/div&gt;
+        &lt;div&gt;
+        &lt;img
+src=&quot;https://d2md07pas2ip5w.cloudfront.net/media/catalog/product/0/_/0_287_3_2
+724_10_9_5_1_9_1_1_1_2_2_1_107_2_822_1_6571.jpg?auto=webp&amp;format=pjpg&amp;width=25
+60&amp;height=3200&amp;fit=cover&quot;&gt;
+        &lt;div class=&quot;price&quot;&gt;Price: ₹35000&lt;/div&gt;
+    &lt;/div&gt;
+        &lt;div&gt;
+        &lt;img
+src=&quot;https://d2md07pas2ip5w.cloudfront.net/media/catalog/product/0/_/0_287_3_2
+724_10_9_5_1_9_1_1_1_2_2_1_107_2_822_1_6699.jpg?auto=webp&amp;format=pjpg&amp;width=25
+60&amp;height=3200&amp;fit=cover&quot;&gt;
+        &lt;div class=&quot;price&quot;&gt;Price: ₹20000&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+
+&lt;section id=&quot;fan&quot;&gt;
+    &lt;div class=&#39;title&#39;&gt;FAN&lt;/div&gt;
+    &lt;div class=&quot;fan-row&quot;&gt;
+        &lt;div class=&quot;fan-box&quot;&gt;
+            &lt;img
+src=&quot;https://rukminim1.flixcart.com/image/312/312/xif0q/fan/q/d/t/19032b-38-1-
+ceiling-fan-1500-kuhl-original-imagmgv4xn2h7haw.jpeg?q=70&quot;&gt;
+                &lt;h2&gt;Shazam z3 fan&lt;br&gt;₹2599&lt;/h2&gt;
+            &lt;h3&gt;Add to cart &lt;/h3&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;fan-box&quot;&gt;
+            &lt;img
+src=&quot;https://rukminim1.flixcart.com/image/312/312/xif0q/fan/m/n/l/magma-ped-
+high-55-1-pedestal-fan-400-khaitan-original-imaghjdcffacpwjf.jpeg?q=70&quot;&gt;
+                &lt;h2&gt;Shazam R2&lt;br&gt;₹1599&lt;/h2&gt;
+            &lt;h3&gt;Add to cart &lt;/h3&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;fan-box&quot;&gt;
+
+            &lt;img
+src=&quot;https://rukminim1.flixcart.com/image/312/312/xif0q/fan/k/m/y/renesa-28-1-
+ceiling-fan-1200-atomberg-original-imagg24udfzk5cez.jpeg?q=70&quot;&gt;
+                &lt;h2&gt;Shazam 5star fan&lt;br&gt;₹2289&lt;/h2&gt;
+            &lt;h3&gt;Add to cart &lt;/h3&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;fan-box&quot;&gt;
+            &lt;img src=&quot;https://m.media-amazon.com/images/I/816lZp-
+8R2L._AC_UY545_FMwebp_QL65_.jpg&quot;&gt;
+                &lt;h2&gt;Shazam table fan&lt;br&gt;₹2277&lt;/h2&gt;
+            &lt;h3&gt;Add to cart &lt;/h3&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;fan-box&quot;&gt;
+            &lt;img
+src=&quot;https://rukminim1.flixcart.com/image/312/312/xif0q/fan/x/q/u/brio-turbo-
+high-speed-decorative-50-1-ceiling-fan-600-candes-original-
+imaghrauuhzsujcy.jpeg?q=70&quot;&gt;
+                &lt;h2&gt;Shazam 600mm&lt;br&gt;₹1299&lt;/h2&gt;
+            &lt;h3&gt;Add to cart &lt;/h3&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;section id=&quot;Coolers&quot;&gt;
+    &lt;div class=&#39;title&#39;&gt;COOLER&lt;/div&gt;
+    &lt;div class=&quot;fan-row&quot;&gt;
+        &lt;div class=&quot;fan-box&quot;&gt;
+            &lt;img src=&quot;https://m.media-
+amazon.com/images/I/610RkvgNY0L._AC_UY545_FMwebp_QL65_.jpg&quot;&gt;
+                &lt;h2&gt;Shazam Ultima&lt;br&gt;₹21999&lt;/h2&gt;
+            &lt;h3&gt;Add to cart &lt;/h3&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;fan-box&quot;&gt;
+            &lt;img src=&quot;https://m.media-
+amazon.com/images/I/516vAOEahAL._AC_UY545_FMwebp_QL65_.jpg&quot;&gt;
+                &lt;h2&gt;Shazam Tuono&lt;br&gt;₹5899&lt;/h2&gt;
+            &lt;h3&gt;Add to cart &lt;/h3&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;fan-box&quot;&gt;
+
+            &lt;img src=&quot;https://m.media-
+amazon.com/images/I/61nlH93oiJL._AC_UY545_FMwebp_QL65_.jpg&quot;&gt;
+                &lt;h2&gt;Shazam Torque&lt;br&gt;₹12599&lt;/h2&gt;
+            &lt;h3&gt;Add to cart &lt;/h3&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;fan-box&quot;&gt;
+            &lt;img src=&quot;https://m.media-amazon.com/images/I/5158MjD-
+QJL._AC_UY545_FMwebp_QL65_.jpg&quot;&gt;
+                &lt;h2&gt;Shazam Tower&lt;br&gt;₹8599&lt;/h2&gt;
+            &lt;h3&gt;Add to cart &lt;/h3&gt;
+        &lt;/div&gt;
+   
+    &lt;div class=&quot;fan-box&quot;&gt;
+        &lt;img src=&quot;https://m.media-
+amazon.com/images/I/41C2uYrt48L._AC_UY533_FMwebp_QL65_.jpg&quot;&gt;
+            &lt;h2&gt;Shazam Portable&lt;br&gt;₹1599&lt;/h2&gt;
+        &lt;h3&gt;Add to cart &lt;/h3&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+
+&lt;section id=&quot;Air conditioner&quot;&gt;
+    &lt;div class=&#39;title&#39;&gt;AIR CONDITINOERS&lt;/div&gt;
+    &lt;div class=&quot;fan-row&quot;&gt;
+        &lt;div class=&quot;fan-box&quot;&gt;
+            &lt;img src=&quot;https://m.media-
+amazon.com/images/I/51dPET0mdFL._AC_UY545_FMwebp_QL65_.jpg&quot;&gt;
+                &lt;h2&gt;Shazam 1.5 rapid&lt;br&gt;₹31999&lt;/h2&gt;
+            &lt;h3&gt;Add to cart &lt;/h3&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;fan-box&quot;&gt;
+            &lt;img src=&quot;https://m.media-
+amazon.com/images/I/51XI2FLjJ4L._AC_UY545_FMwebp_QL65_.jpg&quot;&gt;
+                &lt;h2&gt;Shazam 5in1&lt;br&gt;₹55899&lt;/h2&gt;
+            &lt;h3&gt;Add to cart &lt;/h3&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;fan-box&quot;&gt;
+            &lt;img src=&quot;https://m.media-
+amazon.com/images/I/31UISB90sYL._AC_UY545_FMwebp_QL65_.jpg&quot;&gt;
+                &lt;h2&gt;Shazam Split&lt;br&gt;₹53599&lt;/h2&gt;
+            &lt;h3&gt;Add to cart &lt;/h3&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;fan-box&quot;&gt;
+            &lt;img src=&quot;https://m.media-
+amazon.com/images/I/61ZzcguzB1L._AC_UY545_FMwebp_QL65_.jpg&quot;&gt;
+                &lt;h2&gt;Shazam Smart AC&lt;/A&gt;&lt;br&gt;₹8599&lt;/h2&gt;
+
+            &lt;h3&gt;Add to cart &lt;/h3&gt;
+        &lt;/div&gt;
+   
+    &lt;div class=&quot;fan-box&quot;&gt;
+        &lt;img src=&quot;https://m.media-
+amazon.com/images/I/51JFb7FctDL._AC_UY545_FMwebp_QL65_.jpg&quot;&gt;
+            &lt;h2&gt;Shazam 6in1 &lt;br&gt;₹42599&lt;/h2&gt;
+        &lt;h3&gt;Add to cart &lt;/h3&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+
+&lt;section id=&quot;footer&quot;&gt;
+    &lt;h2&gt;Developed by Abishek Choudhary&lt;/h2&gt;
+    &lt;img src=&quot;icon.png&quot;&gt;
+&lt;/section&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+Style.css
+*{ padding:0; margin:0; box-sizing: border-box; font-family: sans-serif; }
+header{
+    width: 100%;
+    height: 100vh;
+}
+html{
+    scroll-behavior: smooth;
+
+}
+nav{
+    width: 100%;
+    height: 70px;
+    border-bottom: 1px solid grey;
+    box-shadow: 2px 0px 5px grey;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top:0;
+    z-index: 1;
+    background: white;
+}
+.logo{
+    font-size: 50px;
+    font-weight: bold;
+}
+.menu a{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    padding: 10px 20px;
+    margin:5px;
+    font-weight: bold;
+   
+}
+.menu a:last-child{
+    background: black;
+    color: white;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    transform-origin: center;
+    perspective: 2000px;
+    padding-top: 10%;
+}
+.left{
+    flex-basis: 50%;
+    animation: animate 3s linear infinite;
+}
+.left img{
+    width: 100%;
+
+    padding-top: 100px;
+}
+@keyframes animate{
+    0%{
+        transform: scale(1.1);
+    }
+        50%{
+        transform: scale(1);
+    }
+        100%{
+        transform: scale(1.1);
+    }
+}
+.right{
+    flex-basis: 50%;
+    max-width: 400px;
+    margin-left: 100px;
+}
+.right h1{
+    font-size: 50px;
+}
+.right p{
+    font-size: 25px;
+    margin:20px 0px;
+}
+button{
+    background: black;
+    color: white;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+}
+#featured{
+    padding: 50px 0px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(4,20%);
+
+    grid-auto-rows: minmax(200px,auto);
+    grid-gap: 1em;
+    justify-content: center;
+    margin-top:10px;
+    align-items: center;
+}
+.wrapper&gt;div{
+    border:1px solid grey;
+    position: relative;
+    overflow: hidden;
+}
+.wrapper&gt; div img{
+    width: 100%;
+   
+}
+.box1{
+    grid-row: 1/3;
+    grid-column: 1/3;
+}
+.price{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: black;
+    color: white;
+    font-size: 20px;
+}
+.wrapper&gt; div img:hover{
+    transform: scale(1.2);
+    transition: 0.4s linear;
+}
+#fan{
+    padding: 80px 0px;
+}
+.fan-row{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.fan-box{
+    flex-basis: 15%;
+    box-shadow: 2px 3px 5px grey;
+    padding: 10px;
+
+    text-align: center;
+}
+.fan-box img{
+    width: 100%;
+}
+.fan-box h2{
+    margin:20px 0px;
+}
+.fan-box h3{
+    background: black;
+    color: white;
+    padding: 10px;
+}
+.fan-box:hover{
+    transform: translateY(-20px);
+    transition: 0.4s ease;
+}
+#Coolers{
+    padding: 100px 0px;
+}
+#footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: black;
+    color: white;
+    padding: 10px;
+}
+.title{
+    text-align: center;
+font-size: 45px;
+font-weight: 700;
+}
+.logo img{
+    width: 50px;
+    position: absolute;
+    left: 3px;
+    top: 9px;
+}
